@@ -1,0 +1,31 @@
+version: '3'
+services:
+  bangladesh_wtcss4:
+    restart: always
+    image: coreoasis/model_worker:1.8.3
+    links:
+     - celery-db
+     - rabbit:myrabbit
+    environment:
+     - OASIS_MODEL_SUPPLIER_ID=UKMO&BUET
+     - OASIS_MODEL_ID=BGWTCSS4
+     - OASIS_MODEL_VERSION_ID=0.0.1
+     - OASIS_RABBIT_HOST=rabbit
+     - OASIS_RABBIT_PORT=5672
+     - OASIS_RABBIT_USER=rabbit
+     - OASIS_RABBIT_PASS=rabbit
+     - OASIS_CELERY_DB_ENGINE=db+mysql+pymysql
+     - OASIS_CELERY_DB_HOST=celery-db
+     - OASIS_CELERY_DB_PASS=password
+     - OASIS_CELERY_DB_USER=celery
+     - OASIS_CELERY_DB_NAME=celery
+     - OASIS_CELERY_DB_PORT=3306
+    volumes:
+     - /home/ubuntu/BGWTC4SS4/oasislmf.json:/var/oasis/oasislmf.json
+     - /home/ubuntu/BGWTC4SS4/src/keys_server:/var/oasis/src/keys_server:rw
+     - /home/ubuntu/BGWTC4SS4/meta-data/model_settings.json:/var/oasis/meta-data/model_settings.json
+     - /home/ubuntu/BGWTC4SS4/Keys_Data:/var/oasis/keys_data:rw
+     - /home/ubuntu/BGWTC4SS4/Model_Data:/var/oasis/model_data:rw
+     - /home/ubuntu/BGWTC4SS4/analysis_settings.json:/var/oasis/analysis_settings.json
+     - ./docker-shared-fs:/shared-fs:rw
+
