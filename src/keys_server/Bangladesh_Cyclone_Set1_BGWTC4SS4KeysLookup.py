@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 __all__ = [
-    'BGWTCSS4KeysLookup'
+    'Bangladesh_Cyclone_Set1_BGWTC4SS4KeysLookup'
 ]
 
 from keys_server import CatrisksBaseKeysLookup 
@@ -9,7 +9,7 @@ from keys_server import CatrisksBaseKeysLookup
 from oasislmf.utils.log import oasis_log
 
 
-class BGWTCSS4KeysLookup(CatrisksBaseKeysLookup):
+class Bangladesh_Cyclone_Set1_BGWTC4SS4KeysLookup(CatrisksBaseKeysLookup):
     """
     CatRisks MENAEQ model keys lookup logic - at present the MENAEQ lookup logic
     is identical to that of the Catrisks generic keys lookup, but future

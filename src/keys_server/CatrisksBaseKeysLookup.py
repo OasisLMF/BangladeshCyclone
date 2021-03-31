@@ -51,12 +51,19 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
         )
 
         (
-            self.areas,
-            self.lonlat_origin,
-            self.vrg_areas_grid,
-            self.vrg_areas_grid_corners,
-        ) = self._read_areas(os.path.join(self.keys_data_directory, 'DictAreaPeril.csv'))
+            self.areas_w,
+            self.lonlat_origin_w,
+            self.vrg_areas_grid_w,
+            self.vrg_areas_grid_corners_w,
+        ) = self._read_areas(os.path.join(self.keys_data_directory, 'DictAreaPeril_wind.csv'))
 
+        (
+            self.areas_s,
+            self.lonlat_origin_s,
+            self.vrg_areas_grid_s,
+            self.vrg_areas_grid_corners_s,
+        ) = self._read_areas(os.path.join(self.keys_data_directory, 'DictAreaPeril_surge.csv'))
+        
         self.vulnerabilities = self._read_vulnerabilities(os.path.join(self.keys_data_directory, 'DictVULNERABILITY.csv'))
         self.location_map = self._read_location_mappings(self.keys_data_directory)
 
@@ -77,8 +84,8 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
             record['model_name'] = self.model_name
             row_failed = False
 
-            ap_id = vul_id = UNKNOWN_ID
-            area_peril_message = vulnerability_message = ''
+            ap_id_w = ap_id_s = vul_id = UNKNOWN_ID
+            area_peril_message_w = area_peril_message_s = vulnerability_message = ''
             coverage_type = ''
 
             for row in self.location_map['AREA_LEVEL_1']:
@@ -93,11 +100,11 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                     record['gridxy'] = common_utils.get_area_peril_grid_coordinates_for_location(
                         record['longitude'],
                         record['latitude'],
-                        origin=self.lonlat_origin
+                        origin=self.lonlat_origin_w
                     )
 
                 common_utils.fix_locations_by_dictionary(record, self.location_map)
-                ap_id, area_peril_message, mapping_type = self._get_area_peril_id(record)
+                ap_id_w, area_peril_message_w, mapping_type_w = self._get_area_peril_id_w(record)
 
                 #coverage_type = BUILDING_COVERAGE_CODE
                 coverage_type = COVT_BLD
@@ -109,23 +116,25 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                 logging.exception("Error {} processing location: {}".format(str(e), loc_row.to_json()))
 
             #status = KEYS_STATUS_FAIL if row_failed else self._get_lookup_success(ap_id, vul_id_1)
-            status = OASIS_KEYS_FL if row_failed else self._get_custom_lookup_success(ap_id, vul_id_1)
+            status = OASIS_KEYS_FL if row_failed else self._get_custom_lookup_success(ap_id_w, vul_id_1)
             #logging.exception("ap_id: {}, vul_id: {}".format(str(ap_id), str(vul_id_1)))
             r1.append({
                 "loc_id": record['loc_id'],
                 "peril_id": PRL_WTC, #PERIL_ID_QUAKE,
                 "coverage": coverage_type,
                 "coverage_type": coverage_type,
-                "area_peril_id": ap_id,
+                "area_peril_id": ap_id_w,
                 "vulnerability_id": vul_id_1,
-                "message": "{} - {}".format(area_peril_message, vulnerability_message),
+                "message": "{} - {}".format(area_peril_message_w, vulnerability_message),
                 "status": status,
-                "mapped_level":mapping_type
+                "mapped_level":mapping_type_w
             })
 
             row_failed = False
 
             try:
+                
+                ap_id_s, area_peril_message_s, mapping_type_s = self._get_area_peril_id_s(record)
                 #coverage_type = BUILDING_COVERAGE_CODE
                 coverage_type = COVT_BLD
                 record['coverage_type'] = common_utils.CATRISKS_BUILDING_COVERAGE_CODE
@@ -136,18 +145,18 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                 logging.exception("Error {} processing location: {}".format(str(e), loc_row.to_json()))
 
             #status = KEYS_STATUS_FAIL if row_failed else self._get_lookup_success(ap_id, vul_id_1)
-            status = OASIS_KEYS_FL if row_failed else self._get_custom_lookup_success(ap_id, vul_id_2)
+            status = OASIS_KEYS_FL if row_failed else self._get_custom_lookup_success(ap_id_s, vul_id_2)
             #logging.exception("ap_id: {}, vul_id: {}".format(str(ap_id), str(vul_id_1)))
             r1.append({
                 "loc_id": record['loc_id'],
                 "peril_id": PRL_WSS, #PERIL_ID_QUAKE,
                 "coverage": coverage_type,
                 "coverage_type": coverage_type,
-                "area_peril_id": ap_id,
+                "area_peril_id": ap_id_s,
                 "vulnerability_id": vul_id_2,
-                "message": "{} - {}".format(area_peril_message, vulnerability_message),
+                "message": "{} - {}".format(area_peril_message_s, vulnerability_message),
                 "status": status,
-                "mapped_level":mapping_type
+                "mapped_level":mapping_type_s
             })
 
             row_failed = False
@@ -186,12 +195,17 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
         )
 
 
-    def _get_area_peril_id(self, record):
+    def _get_area_peril_id_w(self, record):
         """
         Get the area peril ID for a particular location record.
         """
-        return common_utils.get_area_peril_id(record, self.areas, self.vrg_areas_grid, self.vrg_areas_grid_corners)
+        return common_utils.get_area_peril_id(record, self.areas_w, self.vrg_areas_grid_w, self.vrg_areas_grid_corners_w)
 
+    def _get_area_peril_id_s(self, record):
+        """
+        Get the area peril ID for a particular location record.
+        """
+        return common_utils.get_area_peril_id(record, self.areas_s, self.vrg_areas_grid_s, self.vrg_areas_grid_corners_s)
 
     def _get_vulnerability_id(self, record):
         """
@@ -260,7 +274,7 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                         csv_meta=common_utils._OCC_SCHEME_VULNERABILITY_RECORD_META[key]
                     )
                 ]
-            ) for key in ["OED","ATC", "CRS", "IFM", "RMS IND", "SIC"]
+            ) for key in ["OED"] #,"ATC", "CRS", "IFM", "RMS IND", "SIC"]
         )
 
     @oasis_log()
@@ -274,5 +288,5 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                         csv_meta=common_utils._CONSTRUCTION_CLASS_RECORD_META
                     )
                 ]
-            ) for key in ["OED","ATC", "CRS", "RMS"]
+            ) for key in ["OED"] #,"ATC", "CRS", "RMS"]
         )
