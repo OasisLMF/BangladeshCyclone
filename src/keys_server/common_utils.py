@@ -39,9 +39,10 @@ import itertools
 import operator
 import sys
 
-from oasislmf.model_preparation.lookup import UNKNOWN_ID
+#from oasislmf.model_preparation.lookup import UNKNOWN_ID
+UNKNOWN_ID=-1
 
-from oasislmf.utils.values import (
+from .values import (
     to_float,
     to_int,
     to_string,
