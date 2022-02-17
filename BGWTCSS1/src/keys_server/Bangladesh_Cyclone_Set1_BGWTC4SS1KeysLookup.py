@@ -17,5 +17,5 @@ class Bangladesh_Cyclone_Set1_BGWTC4SS1KeysLookup(CatrisksBaseKeysLookup):
     """
 
     @oasis_log()
-    def __init__(self, keys_data_directory=None, supplier='UKMO', model_name='BGWTCSS1', model_version=None):
+    def __init__(self, keys_data_directory=None, supplier='UKMO', model_name='BGWTCSS1', model_version=None, **kwargs):
         super(self.__class__, self).__init__(keys_data_directory, supplier, model_name, model_version)

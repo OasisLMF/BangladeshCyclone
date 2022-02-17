@@ -2,13 +2,13 @@
     "model_settings":{
         "event_set":{
             "name": "Event Set",
-            "desc": "Piwind Event Set selection",
+            "desc": "Event Set selection",
             "default": "",
             "options":[]
          },
         "event_occurrence_id":{
             "name": "Occurrence Set",
-            "desc": "PiWind Occurrence selection",
+            "desc": "Occurrence selection",
             "default": "",
             "options":[]
         }

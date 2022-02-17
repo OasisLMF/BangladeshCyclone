@@ -12,7 +12,7 @@ import math
 import pandas as pd
 import sys
 
-from oasislmf.model_preparation.lookup import (
+from oasislmf.preparation.lookup import (
     OasisBaseKeysLookup,
     #UNKNOWN_ID,
 )
