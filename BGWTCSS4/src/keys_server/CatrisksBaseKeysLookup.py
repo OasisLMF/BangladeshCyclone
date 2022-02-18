@@ -260,7 +260,7 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                         csv_meta=common_utils._OCC_SCHEME_VULNERABILITY_RECORD_META[key]
                     )
                 ]
-            ) for key in ["OED"]
+            ) for key in ["OED","ATC", "CRS", "IFM", "RMS IND", "SIC"]
         )
 
     @oasis_log()
@@ -274,5 +274,5 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                         csv_meta=common_utils._CONSTRUCTION_CLASS_RECORD_META
                     )
                 ]
-            ) for key in ["OED"]
+            ) for key in ["OED","ATC", "CRS", "RMS"]
         )

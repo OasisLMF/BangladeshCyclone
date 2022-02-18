@@ -1,11 +1,11 @@
 {
-  "analysis_tag": ["5"],
+  "analysis_tag": ["3"],
   "ui_config_tag": ["Summary"],
   "gul_threshold": [0],
-  "model_version_id": ["BGWTCSS1"],
+  "model_version_id": ["BGWTCSS4"],
   "module_supplier_id": ["UKMO&BUET"],
   "number_of_samples": [10],
-  "prog_id": [4],
+  "prog_id": [3],
   "source_tag": ["oasis_localhost"],
   "gul_output": [true],
   "gul_summaries": [

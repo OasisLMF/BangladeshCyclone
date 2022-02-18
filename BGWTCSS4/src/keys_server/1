@@ -12,26 +12,24 @@ import math
 import pandas as pd
 import sys
 
-from oasislmf.preparation.lookup import (
+from oasislmf.model_preparation.lookup import (
     OasisBaseKeysLookup,
-    #UNKNOWN_ID,
+    UNKNOWN_ID,
 )
 from oasislmf.utils.coverages import (
     COVT_BLD,
     COVT_CON,
     COVT_BIT,
 )
-#from oasislmf.utils.csv import read_csv
-from .read_csv import read_csv
+from oasislmf.utils.read_csv import read_csv
+#from read_csv import read_csv
 from oasislmf.utils.log import oasis_log
-from oasislmf.utils.peril import PRL_QEQ
 from oasislmf.utils.peril import PRL_WSS
-from oasislmf.utils.peril import PRL_WTC
 from oasislmf.utils.status import OASIS_KEYS_FL
 
-from keys_server import common_utils
+import keys_server.utils as common_utils
 
-UNKNOWN_ID=-1
+
 
 class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
     """
@@ -113,7 +111,7 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
             #logging.exception("ap_id: {}, vul_id: {}".format(str(ap_id), str(vul_id_1)))
             r1.append({
                 "loc_id": record['loc_id'],
-                "peril_id": PRL_WTC, #PERIL_ID_QUAKE,
+                "peril_id": PRL_WSS, #PERIL_ID_QUAKE,
                 "coverage": coverage_type,
                 "coverage_type": coverage_type,
                 "area_peril_id": ap_id,
@@ -126,18 +124,18 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
             row_failed = False
 
             try:
-                #coverage_type = BUILDING_COVERAGE_CODE
-                coverage_type = COVT_BLD
-                record['coverage_type'] = common_utils.CATRISKS_BUILDING_COVERAGE_CODE
+                #coverage_type = CONTENTS_COVERAGE_CODE
+                coverage_type = COVT_CON
+                record['coverage_type'] = common_utils.CATRISKS_CONTENTS_COVERAGE_CODE
                 vul_id_2, vulnerability_message = self._get_vulnerability_id(record)
-                #logging.exception("record: {}".format(str(record)))
             except Exception as e:
                 row_failed = True
                 logging.exception("Error {} processing location: {}".format(str(e), loc_row.to_json()))
 
-            #status = KEYS_STATUS_FAIL if row_failed else self._get_lookup_success(ap_id, vul_id_1)
+            #status = KEYS_STATUS_FAIL if row_failed else self._get_lookup_success(ap_id, vul_id_2)
             status = OASIS_KEYS_FL if row_failed else self._get_custom_lookup_success(ap_id, vul_id_2)
-            #logging.exception("ap_id: {}, vul_id: {}".format(str(ap_id), str(vul_id_1)))
+            #logging.exception("ap_id: {}, vul_id: {}".format(str(ap_id), str(vul_id_2)))
+
             r1.append({
                 "loc_id": record['loc_id'],
                 "peril_id": PRL_WSS, #PERIL_ID_QUAKE,
@@ -147,12 +145,31 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                 "vulnerability_id": vul_id_2,
                 "message": "{} - {}".format(area_peril_message, vulnerability_message),
                 "status": status,
-                "mapped_level":mapping_type
+                "mapped_level": mapping_type
             })
+            try:
+                #coverage_type = TIME_COVERAGE_CODE
+                coverage_type = COVT_BIT
+                record['coverage_type'] = common_utils.CATRISKS_TIME_BUILDING_CODE
+                vul_id_3, vulnerability_message = self._get_vulnerability_id(record)
+            except Exception as e:
+                row_failed = True
+                logging.exception("Error {} processing location: {}".format(str(e), loc_row.to_json()))
 
-            row_failed = False
+            #status = KEYS_STATUS_FAIL if row_failed else self._get_lookup_success(ap_id, vul_id_3)
+            status = OASIS_KEYS_FL if row_failed else self._get_custom_lookup_success(ap_id, vul_id_3)
 
-		
+            r1.append({
+                "loc_id": record['loc_id'],
+                "peril_id": PRL_WSS, #PERIL_ID_QUAKE,
+                "coverage": coverage_type,
+                "coverage_type": coverage_type,
+                "area_peril_id": ap_id,
+                "vulnerability_id": vul_id_3,
+                "message": "{} - {}".format(area_peril_message, vulnerability_message),
+                "status": status,
+                "mapped_level": mapping_type
+            })
 
 #            disagg = common_utils.get_disaggregation(record, self.areas, mapping_type,ap_id)
 #
@@ -260,7 +277,7 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                         csv_meta=common_utils._OCC_SCHEME_VULNERABILITY_RECORD_META[key]
                     )
                 ]
-            ) for key in ["OED"]
+            ) for key in ["OED","ATC", "CRS", "IFM", "RMS IND", "SIC"]
         )
 
     @oasis_log()
@@ -274,5 +291,6 @@ class CatrisksBaseKeysLookup(OasisBaseKeysLookup):
                         csv_meta=common_utils._CONSTRUCTION_CLASS_RECORD_META
                     )
                 ]
-            ) for key in ["OED"]
+            ) for key in ["OED","ATC", "CRS", "RMS"]
         )
+
