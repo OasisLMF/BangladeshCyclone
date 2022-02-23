@@ -1,0 +1,9 @@
+{
+    "analysis_settings_json": "analysis_settings.json",
+    "lookup_data_dir": "/home/ubuntu/BangladeshCyclone/BGWTCSS1/keys_data",
+    "lookup_module_path": "/home/ubuntu/BangladeshCyclone/BGWTCSS1/src/keys_server/Bangladesh_Cyclone_Set1_BGWTC4SS1KeysLookup.py",
+    "model_data_dir": "/home/ubuntu/BangladeshCyclone/BGWTCSS1/model_data",
+    "model_version_csv": "/home/ubuntu/BangladeshCyclone/BGWTCSS1/keys_data/ModelVersion.csv",
+    "oed_location_csv": "/home/ubuntu/BangladeshCyclone/BGWTCSS1/tests/test-1/demo_location.csv"
+}
+
