@@ -1,0 +1,30 @@
+{
+  "analysis_tag": ["3"],
+  "ui_config_tag": ["Summary"],
+  "gul_threshold": [0],
+  "model_version_id": ["BGWTCSS4"],
+  "module_supplier_id": ["UKMO&BUET"],
+  "number_of_samples": [10],
+  "prog_id": [3],
+  "source_tag": ["oasis_localhost"],
+  "gul_output": [true],
+  "gul_summaries": [
+    {
+      "aalcalc": [true],
+      "id": [1],
+      "oed_fields": [],
+      "lec_output": [true],
+      "leccalc": {
+        "return_period_file": [true],
+        "full_uncertainty_aep": [true],
+        "full_uncertainty_oep": [true]
+      }
+    }
+  ],
+  "il_output": [false],
+  "ri_output": [false],
+  "model_settings": {
+    "event_set": [""],
+    "event_occurrence_id": [""]
+  }
+}

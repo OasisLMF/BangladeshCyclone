@@ -1,9 +1,0 @@
-{
-    "analysis_settings_json": "analysis_settings.json",
-    "lookup_data_dir": "/home/ubuntu/IKI-Oasis/BGWTC4SS1/keys_data/",
-    "lookup_module_path": "src/keys_server/Bangladesh_Cyclone_Set1_BGWTC4SS1KeysLookup.py",
-    "model_data_dir": "/home/ubuntu/IKI-Oasis/BGWTC4SS1/model_data",
-    "model_version_csv": "/home/ubuntu/IKI-Oasis/BGWTC4SS1/keys_data/ModelVersion.csv",
-    "oed_location_csv": "tests/demo_location.csv"
-}
-
