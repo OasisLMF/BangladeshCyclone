@@ -1,14 +1,22 @@
 Source of files for Oasis LMF Bangladesh Cylone Wind and Storm Surge models
 Author: Johanna Carter, Oasis Palmtree Ltd
-Date 25th March 2021
+
+
+**Last updated 26th April 2022**
+vulnerability.bin has been updated due to missing intensity bins: range 1101-1122 for vulnerability id beginning with 2 (wind vulnerabilities) and range 1-1100 for vulnerability_id beginning with 3 (storm surge vulnerabilities)
+These bins have been populated with single records with damage bin 1 and prob. This is because they will never be paired with footprints which contain these missing intensity bin ranges because they relate to different perils, but the full range 1-1122 must be present
+Files vulnerability_fixed2.bin and vulnerability_fixed2.csv sent via slack Palmtree channel on 26/4/2022. vulnerability_fixed2.bin to replace vulnerability.bin
+
+
 
 **Last updated 21st April 2022**
 vulnerability.bin has been updated due to missing intensity bins: range 1101-1122 for vulnerability id beginning with 2 (wind vulnerabilities) and range 1-1100 for vulnerability_id beginning with 3 (storm surge vulnerabilities)
-
 These bins have been populated with single records with damage bin 1 and prob. This is because they will never be paired with footprints which contain these missing intensity bin ranges because they relate to different perils, but the full range 1-1122 must be present
-Files vulnerability_fixed.bin and vulnerability_fixed.csv 
-21/4/2022. vulnerability_fixed.bin to replace vulnerability.bin
-****
+Files vulnerability_fixed.bin and vulnerability_fixed.csv sent via slack Palmtree channel on 21/4/2022. vulnerability_fixed.bin to replace vulnerability.bin
+
+
+Date 25th March 2021
+**Last updated 7th May 2021**
 
 **Final model data folders for Oasis Platform**
 /mnt/efs/IKI/IKI-Oasis
