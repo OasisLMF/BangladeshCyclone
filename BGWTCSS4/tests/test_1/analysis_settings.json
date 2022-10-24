@@ -1,8 +1,8 @@
 {
     "analysis_tag": "base_example",
     "source_tag": "MDK",
-    "model_version_id": "BGWTCSS1",
-    "module_supplier_id": "OasisLMF",
+    "model_name_id": "BGWTCSS4",
+    "model_supplier_id": "OasisLMF",
     "number_of_samples": 10,
     "gul_threshold": 0,
     "gul_output": true,
@@ -23,7 +23,7 @@
             }
         }
     ],
-    "il_output": true,
+    "il_output": false,
     "il_summaries": [
         {
             "aalcalc": true,
@@ -37,7 +37,7 @@
             }
         }
     ],
-    "ri_output": true,
+    "ri_output": false,
     "ri_summaries": [
         {
             "aalcalc": true,
