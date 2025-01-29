@@ -1,0 +1,3134 @@
+{
+  "datasets": [
+    {
+      "id": "bgwtcss_haz",
+      "title": "Bangladesh Tropical Cyclone Historical Event Hazard Module",
+      "description": "The catalogue contains the following tropical cyclones (landfall date): BOB01(30/04/1991) BOB07 (25/11/1995) TC01B (19/05/1997) Akash (14/05/2007) Sidr (15/11/2007) Rashmi (26/10/2008) Aila (25/05/2009) Viyaru (16/05/2013) Roanu (21/05/2016) Mora (30/05/2017) Fani (04/05/2019) Bulbul (09/11/2019). Each tropical cyclone has a 9 member, 3-hourly time-lagged  ensemble and the hazard module comprises of hazard footprints for windspeed at 4.4km resolution and storm surge at 1.5km resolution based on the Met Office Unified Model dynamically downscaling ECMWF ERA5 data. Storm Surge simulation used open source-based Deft3D model. The historical storms occurred over a period of 29 years but in order to model the damage impact of each ensemble member individually they have each been assigned to an extended timeline of 261 years in the model implementation, with each ensemble member occurring once every 29 years in order to preserve the overall frequency of the event with respect to the historical record.",
+      "risk_data_type": [
+        "hazard"
+      ],
+      "publisher": {
+        "name": "Oasis LMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "version": "1",
+      "project": "Bangladesh tropical cyclone historical catalogue catastrophe model",
+      "details": "The Bangladesh Tropical Cyclone Probabilistic Historical Catalogue catastrophe models were created jointly between the UK Met Office, BUET, Catrisks Solutions and Oasis Palmtree as part of the ‘Oasis Platform for Climate and Catastrophe Risk Assessment – Asia’ project, supported by the International Climate Initiative (IKI) and the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety, based on a decision of the Germany Bundestag. The models comprise an ensemble event catalogue representing the wind and storm surge hazard of 12 Tropical Cyclones that affected Bangladesh between 1991 and 2019. ",
+      "spatial": {
+        "countries": [
+          "BGD"
+        ],
+        "scale": "national"
+      },
+      "license": "CC-BY-NC-SA-4.0",
+      "contact_point": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "creator": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "attributions": [
+        {
+          "id": "bgwtcss_haz_wtc",
+          "entity": {
+            "name": "UK Met Office",
+            "url": "https://www.metoffice.gov.uk"
+          },
+          "role": "collaborator"
+        },
+        {
+          "id": "bgwtcss_haz_wss",
+          "entity": {
+            "name": "Bangladesh University of Engineering and Technology (BUET)",
+            "url": "https://www.buet.ac.bd/web/"
+          },
+          "role": "collaborator"
+        },
+        {
+          "id": "bgwtcss_col",
+          "entity": {
+            "name": "Oasis PalmTree Limited",
+            "email": "info@oasispalmtree.co.uk",
+            "url": "http://oasispalmtree.co.uk/"
+          },
+          "role": "collaborator"
+        },
+        {
+          "id": "bgwtcss_dist",
+          "entity": {
+            "name": "Oasis Loss Modelling Framework",
+            "email": "support@oasislmf.org",
+            "url": "https://oasislmf.org/"
+          },
+          "role": "distributor"
+        },
+        {
+          "id": "bgwtcss_spns",
+          "entity": {
+            "name": "Federal Ministry for the Environment, Nature Conservation and Nuclear Safety",
+            "url": "https://www.bmuv.de/"
+          },
+          "role": "sponsor"
+        },
+        {
+          "id": "bgwtcss_fund",
+          "entity": {
+            "name": "International Climate Initiative (IKI)",
+            "url": "https://www.international-climate-initiative.com/"
+          },
+          "role": "funder"
+        }
+      ],
+      "referenced_by": [
+        {
+          "id": "bgwtcss_haz_1",
+          "name": "Bangladesh Tropical Cyclone Historical Event Set:Data Description Documentation",
+          "author_names": [
+            "Hamish Steptoe"
+          ],
+          "date_published": "2019-10-07",
+          "url": "https://github.com/OasisLMF/BangladeshCyclone/docs/referencedBy/HistoricalCatalogueDataDescription.pdf"
+        },
+        {
+          "id": "bgwtcss_haz_2",
+          "name": "Oasis Platform to Support Cyclone and Storm Surge\nRisk Assessment for Bangladesh - Gobeshona conference presentation",
+          "author_names": [
+            "Prof. A.K.M. Saiful Islam",
+            " Nahruma Mehzabeen",
+            " Dr. Mohan Kumar Das",
+            "\nFaruque Abdullah",
+            " Maruf Billah"
+          ],
+          "date_published": "2021-01-22",
+          "url": "https://github.com/OasisLMF/BangladeshCyclone/docs/referencedBy/Gobeshona_Oasis_22January2021.pdf"
+        },
+        {
+          "id": "bgwtcss_haz_3",
+          "name": "Risk Modelling for Improved Disaster Risk Governance in Bangladesh - webinar presentation",
+          "author_names": [
+            "Prof. A.K.M. Saiful Islam",
+            " Nahruma Mehzabeen",
+            " Dr. Mohan Kumar Das",
+            "\nFaruque Abdullah",
+            " Maruf Billah"
+          ],
+          "date_published": "2021-05-05",
+          "url": "https://github.com/OasisLMF/BangladeshCyclone/docs/referencedBy/BUET-Storm-Surge-Modelling-Oasis-October2020.pdf"
+        },
+        {
+          "id": "bgwtcss_haz_4",
+          "name": "Tropical cyclone simulations over Bangladesh at convection permitting 4.4 km & 1.5 km resolution",
+          "author_names": [
+            "Hamish Steptoe",
+            " Nicholas Henry Savage",
+            " Saeed Sadri",
+            " Kate Salmon",
+            " Zubair Maalick",
+            "Stuart Webster "
+          ],
+          "date_published": "2021-02-16",
+          "url": "https://www.nature.com/articles/s41597-021-00847-5",
+          "doi": "10.1038/s41597-021-00847-5"
+        }
+      ],
+      "resources": [
+        {
+          "id": "hc_oasis_event_dict",
+          "title": "Event dictionary",
+          "description": "Contains the definition of the event ids in the model.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/haz/hc_oasis_event_dict.csv"
+        },
+        {
+          "id": "Intensity_bin_dict",
+          "title": "Intensity Bin Dictionary for hazard intensity measures",
+          "description": "Contains the definition of bins of hazard intensity ranges for each peril.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/haz/Intensity_bin_dict.csv"
+        }
+      ],
+      "hazard": {
+        "event_sets": [
+          {
+            "id": "BGWTCSS1",
+            "analysis_type": "empirical",
+            "frequency_distribution": "user_defined",
+            "seasonality": "user_defined",
+            "calculation_method": "simulated",
+            "event_count": 108,
+            "occurrence_range": "1 to 261 years",
+            "spatial": {
+              "countries": [
+                "BGD"
+              ],
+              "bbox": [88.02799988, 92.64499664, 20.74389172, 26.59199905],
+              "scale": "national"
+            },
+            "temporal": {
+              "start": "1991-01-01",
+              "end": "2019-12-31",
+              "duration": "P29Y"
+            },
+            "hazards": [
+              {
+                "id": "WTC",
+                "type": "strong_wind",
+                "processes": [
+                  "tropical_cyclone"
+                ],
+                "intensity_measure": "PGWS_tcy:m/s"
+              },
+              {
+                "id": "WSS",
+                "type": "flood",
+                "processes": [
+                  "storm_surge"
+                ],
+                "intensity_measure": "fl_wd:m",
+                "trigger": {
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ]
+                }
+              }
+            ],
+            "events": [
+              {
+                "id": "1",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "2",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "3",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "4",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "5",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "6",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "7",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "8",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "9",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2009-0204-BGD",
+                    "description": "AILA ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "10",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "11",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "12",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "13",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "14",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "15",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "16",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "17",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "18",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0227-BGD",
+                    "description": "AKASH ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "19",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "20",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "21",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "22",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "23",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "24",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "25",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "26",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "27",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1991-0120-BGD",
+                    "description": "BOB01 ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "28",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "29",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "30",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "31",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "32",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "33",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "34",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "35",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "36",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1995-0281-BGD",
+                    "description": "BOB07 ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "37",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "38",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "39",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "40",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "41",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "42",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "43",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "44",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "45",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0550-BGD",
+                    "description": "BULBUL ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "46",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "47",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "48",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "49",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "50",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "51",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "52",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "53",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "54",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2019-0164-BGD",
+                    "description": "FANI ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "55",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "56",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "57",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "58",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "59",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "60",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "61",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "62",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "63",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2017-0152-BGD",
+                    "description": "MORA ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "64",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "65",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "66",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "67",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "68",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "69",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "70",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "71",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "72",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2008-0648-BGD",
+                    "description": "RASHMI ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "73",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "74",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "75",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "76",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "77",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "78",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "79",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "80",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "81",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2016-0175-BGD",
+                    "description": "ROANU ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "82",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "83",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "84",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "85",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "86",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "87",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "88",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "89",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "90",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2007-0556-BGD",
+                    "description": "SIDR ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "91",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "92",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "93",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "94",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "95",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "96",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "97",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "98",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "99",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "1997-0114-BGD",
+                    "description": "TC01B ensemble 9"
+                  }
+                ]
+              },
+              {
+                "id": "100",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 1"
+                  }
+                ]
+              },
+              {
+                "id": "101",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 2"
+                  }
+                ]
+              },
+              {
+                "id": "102",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 3"
+                  }
+                ]
+              },
+              {
+                "id": "103",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 4"
+                  }
+                ]
+              },
+              {
+                "id": "104",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 5"
+                  }
+                ]
+              },
+              {
+                "id": "105",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 6"
+                  }
+                ]
+              },
+              {
+                "id": "106",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 7"
+                  }
+                ]
+              },
+              {
+                "id": "107",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 8"
+                  }
+                ]
+              },
+              {
+                "id": "108",
+                "calculation_method": "simulated",
+                "hazard": {
+                  "id": "WTC",
+                  "type": "strong_wind",
+                  "processes": [
+                    "tropical_cyclone"
+                  ],
+                  "intensity_measure": "PGWS_tcy:m/s"
+                },
+                "occurrence": {
+                  "probabilistic": {
+                    "return_period": 29
+                  }
+                },
+                "disaster_identifiers": [
+                  {
+                    "scheme": "EMDAT",
+                    "id": "2013-0138-BGD",
+                    "description": "VIYARU ensemble 9"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "links": [
+        {
+          "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+          "rel": "describedby"
+        }
+      ]
+    },
+    {
+      "id": "bgwtcss_exp",
+      "title": "Sample property exposure data for testing.",
+      "description": "A sample exposure location file of 20 properties is provided as an example of the required input format for running the model, along with a table describing the required fields and valid values.",
+      "risk_data_type": [
+        "exposure"
+      ],
+      "publisher": {
+        "name": "Oasis LMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "version": "1",
+      "project": "Bangladesh tropical cyclone historical catalogue catastrophe model",
+      "details": "The Bangladesh Tropical Cyclone Probabilistic Historical Catalogue catastrophe models were created jointly between the UK Met Office, BUET, Catrisks Solutions and Oasis Palmtree as part of the ‘Oasis Platform for Climate and Catastrophe Risk Assessment – Asia’ project, supported by the International Climate Initiative (IKI) and the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety, based on a decision of the Germany Bundestag. The models comprise an ensemble event catalogue representing the wind and storm surge hazard of 12 Tropical Cyclones that affected Bangladesh between 1991 and 2019. ",
+      "spatial": {
+        "countries": [
+          "BGD"
+        ],
+        "scale": "national"
+      },
+      "license": "CC-BY-NC-SA-4.0",
+      "contact_point": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "creator": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "exposure": {
+        "category": "buildings",
+        "taxonomy": "OED",
+        "metrics": [
+          {
+            "id": "1",
+            "dimension": "structure",
+            "quantity_kind": "currency"
+          },
+          {
+            "id": "3",
+            "dimension": "content",
+            "quantity_kind": "currency"
+          }
+        ]
+      },
+      "resources": [
+        {
+          "id": "ExposureRequiredFields",
+          "title": "Exposure Required Fields",
+          "description": "Describes the exposure format and fields required for modelling.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/ExposureRequiredFields.csv"
+        },
+        {
+          "id": "LocationMapping_AREA_LEVEL_1",
+          "title": "Location Mapping Area 'CRSL1'",
+          "description": "Lists valid values for GeogName1 where  'CRSL1' is used in exposure input field GeogScheme1.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_1.csv"
+        },
+        {
+          "id": "LocationMapping_AREA_LEVEL_2",
+          "title": "Location Mapping Area 'CRSL2'",
+          "description": "Lists valid values for GeogName1 where  'CRSL2' is used in exposure input field GeogScheme1.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_2.csv"
+        },
+        {
+          "id": "LocationMapping_AREA_LEVEL_3",
+          "title": "Location Mapping Area 'CRSL3'",
+          "description": "Lists valid values for GeogName1 where  'CRSL3' is used in exposure input field GeogScheme1.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_3.csv"
+        },
+        {
+          "id": "LocationMapping_AREA_LEVEL_4",
+          "title": "Location Mapping Area 'CRSL4'",
+          "description": "Lists valid values for GeogName1 where  'CRSL4' is used in exposure input field GeogScheme1.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_4.csv"
+        },
+        {
+          "id": "LocationMapping_AREA_LEVEL_5",
+          "title": "Location Mapping Area 'CRSL5'",
+          "description": "Lists valid values for GeogName1 where  'CRSL5' is used in exposure input field GeogScheme1.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_5.csv"
+        },
+        {
+          "id": "demo_location",
+          "title": "Demo location",
+          "description": "A sample exposure location file which can be run through the model.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/exp/demo_location.csv"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+          "rel": "describedby"
+        }
+      ]
+    },
+    {
+      "id": "bgwtcss_vln",
+      "title": "Bangladesh Tropical Cyclone Historical Event Vulnerability Module",
+      "description": "A set of 22 vulnerability functions were developed by BUET and CatRisk Solutions for the model based on the predominant construction types of residential buildings found Bangladesh. A list of supported Construction and Occupancy codes and additional attibutes and descriptions can be found in vulnerability resources.",
+      "risk_data_type": [
+        "vulnerability"
+      ],
+      "publisher": {
+        "name": "Oasis LMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "version": "1",
+      "project": "Bangladesh tropical cyclone historical catalogue catastrophe model",
+      "details": "The Bangladesh Tropical Cyclone Probabilistic Historical Catalogue catastrophe models were created jointly between the UK Met Office, BUET, Catrisks Solutions and Oasis Palmtree as part of the ‘Oasis Platform for Climate and Catastrophe Risk Assessment – Asia’ project, supported by the International Climate Initiative (IKI) and the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety, based on a decision of the Germany Bundestag. The models comprise an ensemble event catalogue representing the wind and storm surge hazard of 12 Tropical Cyclones that affected Bangladesh between 1991 and 2019. ",
+      "spatial": {
+        "countries": [
+          "BGD"
+        ],
+        "scale": "national"
+      },
+      "license": "CC-BY-NC-SA-4.0",
+      "contact_point": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "creator": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "vulnerability": {
+        "hazard_primary": "strong_wind",
+        "hazard_secondary": "coastal_flood",
+        "hazard_process_primary": "tropical_cyclone",
+        "hazard_process_secondary": "storm_surge",
+        "hazard_analysis_type": "empirical",
+        "intensity": "PGWS_tcy:m/s",
+        "category": "buildings",
+        "taxonomy": "OED",
+        "impact": {
+          "type": "direct",
+          "metric": "damage_ratio",
+          "unit": "percentage",
+          "base_data_type": "observed"
+        },
+        "spatial": {
+          "countries": [
+            "BGD"
+          ],
+          "scale": "national"
+        },
+        "functions": {
+          "vulnerability": {
+            "approach": "hybrid",
+            "relationship": "discrete"
+          }
+        },
+        "cost": [
+          {
+            "id": "1",
+            "dimension": "structure",
+            "unit": "USD"
+          },
+          {
+            "id": "3",
+            "dimension": "content",
+            "unit": "USD"
+          }
+        ]
+      },
+      "attributions": [
+        {
+          "id": "bgwtcss_vln_wtc",
+          "entity": {
+            "name": "CatRisk Solutions",
+            "url": "https://catrisks.com/"
+          },
+          "role": "collaborator"
+        },
+        {
+          "id": "bgwtcss_vln_wss",
+          "entity": {
+            "name": "Bangladesh University of Engineering and Technology (BUET)",
+            "url": "http://oasispalmtree.co.uk/"
+          },
+          "role": "collaborator"
+        }
+      ],
+      "sources": [
+        {
+          "id": "bgwtcss_vln",
+          "name": "Global flood depth-damage functions (2017)",
+          "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC105688/copy_of_global_flood_depth-damage_functions__30102017.xlsx",
+          "type": "dataset",
+          "component": "vulnerability"
+        }
+      ],
+      "resources": [
+        {
+          "id": "OED_CONSTRUCTION_CLASS",
+          "title": "OED Construction codes",
+          "description": "Describes attributes associated with OED construction code for vulnerability function mapping.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/vln/OED_CONSTRUCTION_CLASS.csv"
+        },
+        {
+          "id": "OED_OCCUPANCY_CLASS",
+          "title": "OED Occupancy codes",
+          "description": "Describes attributes associated with OED occupancy code for vulnerability function mapping.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/vln/OED_OCCUPANCY_CLASS.csv"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+          "rel": "describedby"
+        }
+      ]
+    },
+    {
+      "id": "bgwtcss_los",
+      "title": "Sample ground up loss reports for Bangladesh property exposure data",
+      "description": "A set of ground up loss results for the sample property exposure is provided as an example of model output.",
+      "risk_data_type": [
+        "loss"
+      ],
+      "publisher": {
+        "name": "Oasis LMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "version": "1",
+      "project": "Bangladesh tropical cyclone historical catalogue catastrophe model",
+      "details": "The Bangladesh Tropical Cyclone Probabilistic Historical Catalogue catastrophe models were created jointly between the UK Met Office, BUET, Catrisks Solutions and Oasis Palmtree as part of the ‘Oasis Platform for Climate and Catastrophe Risk Assessment – Asia’ project, supported by the International Climate Initiative (IKI) and the Federal Ministry for the Environment, Nature Conservation and Nuclear Safety, based on a decision of the Germany Bundestag. The models comprise an ensemble event catalogue representing the wind and storm surge hazard of 12 Tropical Cyclones that affected Bangladesh between 1991 and 2019. ",
+      "spatial": {
+        "countries": [
+          "BGD"
+        ],
+        "scale": "national"
+      },
+      "license": "CC-BY-NC-SA-4.0",
+      "contact_point": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "creator": {
+        "name": "OasisLMF",
+        "email": "support@oasislmf.org",
+        "url": "https://oasislmf.org/"
+      },
+      "resources": [
+        {
+          "id": "analysis_settings",
+          "title": "Analysis settings for modelled losses",
+          "description": "The Oasis analysis settings file for modelled losses of sample exposure location file.",
+          "media_type": "application/json",
+          "format": "json",
+          "download_url": "resources/los/analysis_settings.json"
+        },
+        {
+          "id": "gul_S1_aalcalc",
+          "title": "Ground up AAL",
+          "description": "Ground up Average Annual Loss report for the sample exposure file.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/los/gul_S1_aalcalc.csv"
+        },
+        {
+          "id": "gul_S1_eltcalc",
+          "title": "Ground up ELT",
+          "description": "Ground up Event Loss Table report for the sample exposure file.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/los/gul_S1_eltcalc.csv"
+        },
+        {
+          "id": "gul_S1_leccalc_full_uncertainty_aep",
+          "title": "Ground up Aggregate LEC",
+          "description": "Aggregate Exceedance Probability report for the sample exposure file.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/los/gul_S1_leccalc_full_uncertainty_aep.csv"
+        },
+        {
+          "id": "gul_S1_leccalc_full_uncertainty_oep",
+          "title": "Ground up Occurrence LEC",
+          "description": "Occurrence Loss Exceedance Curve report for the sample exposure file.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/los/gul_S1_leccalc_full_uncertainty_oep.csv"
+        },
+        {
+          "id": "gul_S1_summary-info",
+          "title": "Ground up Summary Info",
+          "description": "Describes the summary level for the Ground Up loss reports.",
+          "media_type": "text/csv",
+          "format": "csv",
+          "download_url": "resources/los/gul_S1_summary-info.csv"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://docs.riskdatalibrary.org/en/0__2__0/rdls_schema.json",
+          "rel": "describedby"
+        }
+      ]
+    }
+  ]
+}
