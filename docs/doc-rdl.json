@@ -158,7 +158,7 @@
         "event_sets": [
           {
             "id": "BGWTCSS1",
-            "analysis_type": "empirical",
+            "analysis_type": "probabilistic",
             "frequency_distribution": "user_defined",
             "seasonality": "user_defined",
             "calculation_method": "simulated",
@@ -2960,7 +2960,7 @@
         "taxonomy": "OED",
         "impact": {
           "type": "direct",
-          "metric": "damage_ratio",
+          "metric": "economic_loss_value",
           "unit": "percentage",
           "base_data_type": "observed"
         },
