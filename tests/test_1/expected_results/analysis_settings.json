@@ -26,5 +26,7 @@
     "ri_output": false,
     "ri_summaries": [],
     "model_supplier_id": "OasisLMF",
-    "model_name_id": "BGWTCSS1"
+    "model_name_id": "BGWTCSS1",
+    "rl_output": false,
+    "rl_summaries": []
 }
