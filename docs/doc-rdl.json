@@ -2862,46 +2862,6 @@
           "download_url": "resources/exp/ExposureRequiredFields.csv"
         },
         {
-          "id": "LocationMapping_AREA_LEVEL_1",
-          "title": "Location Mapping Area 'CRSL1'",
-          "description": "Lists valid values for GeogName1 where  'CRSL1' is used in exposure input field GeogScheme1.",
-          "media_type": "text/csv",
-          "format": "csv",
-          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_1.csv"
-        },
-        {
-          "id": "LocationMapping_AREA_LEVEL_2",
-          "title": "Location Mapping Area 'CRSL2'",
-          "description": "Lists valid values for GeogName1 where  'CRSL2' is used in exposure input field GeogScheme1.",
-          "media_type": "text/csv",
-          "format": "csv",
-          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_2.csv"
-        },
-        {
-          "id": "LocationMapping_AREA_LEVEL_3",
-          "title": "Location Mapping Area 'CRSL3'",
-          "description": "Lists valid values for GeogName1 where  'CRSL3' is used in exposure input field GeogScheme1.",
-          "media_type": "text/csv",
-          "format": "csv",
-          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_3.csv"
-        },
-        {
-          "id": "LocationMapping_AREA_LEVEL_4",
-          "title": "Location Mapping Area 'CRSL4'",
-          "description": "Lists valid values for GeogName1 where  'CRSL4' is used in exposure input field GeogScheme1.",
-          "media_type": "text/csv",
-          "format": "csv",
-          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_4.csv"
-        },
-        {
-          "id": "LocationMapping_AREA_LEVEL_5",
-          "title": "Location Mapping Area 'CRSL5'",
-          "description": "Lists valid values for GeogName1 where  'CRSL5' is used in exposure input field GeogScheme1.",
-          "media_type": "text/csv",
-          "format": "csv",
-          "download_url": "resources/exp/LocationMapping_AREA_LEVEL_5.csv"
-        },
-        {
           "id": "demo_location",
           "title": "Demo location",
           "description": "A sample exposure location file which can be run through the model.",
