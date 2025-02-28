@@ -1,7 +1,0 @@
-{
-    "lookup_data_dir": "/var/oasis/keys_data",
-    "lookup_package_dir": "/home/worker/src/keys_server",
-    "model_data_dir": "/var/oasis/model_data",
-    "model_version_csv": "/var/oasis/keys_data/ModelVersion.csv",
-    "gulpy": false
-}
