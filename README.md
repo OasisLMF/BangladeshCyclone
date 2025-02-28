@@ -51,10 +51,10 @@ Follow these steps to download the model data:
 
 ## Structure of Downloaded Data
 
-After running the script, the `model_data/` directory should contain the following file:
+After running the script, the `model_data/` directory should contain the following files:
 
 ```
-footprint.bin.z
+footprint.bin.z & footprint.idx.z
 ```
 
 ## Troubleshooting
