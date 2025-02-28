@@ -42,31 +42,11 @@ Follow these steps to download the model data:
     cd BangladeshCyclone
     ```
 
-2. **Switch to the 2025 branch:**:
-
-    ```bash
-    git checkout -b 2025_update
-    git pull origin 2025_update
-    ```
-
-3. **Run the script to download the footprint file**:
-
-    Make the script executable:
-
-    ```bash
-    chmod +x download_bgwtcss1.sh
-    ```
-
     Then run the script:
 
     ```bash
     ./download_bgwtcss1.sh
-    ```
 
-4. **Move the downloaded footprint file** to the `model_data/` directory:
-
-    ```bash
-    mv footprint.bin.z model_data/
     ```
 
 ## Structure of Downloaded Data
