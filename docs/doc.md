@@ -266,7 +266,7 @@
 | Intensity_bin_dict | Intensity Bin Dictionary for hazard intensity measures | Contains the definition of bins of hazard intensity ranges for each peril. | text/csv | csv |  |  |  | resources/haz/Intensity_bin_dict.csv |  |  |
 
 #### Event dictionary
-File (hc_oasis_event_dict.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/haz/hc_oasis_event_dict.csv)
+File (hc_oasis_event_dict.csv) found [here](resources/haz/hc_oasis_event_dict.csv)
 
 First 10 rows displayed only
 
@@ -284,7 +284,7 @@ First 10 rows displayed only
 | 10 | AKASH ensemble 1 |
 
 #### Intensity Bin Dictionary for hazard intensity measures
-File (Intensity_bin_dict.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/haz/Intensity_bin_dict.csv)
+File (Intensity_bin_dict.csv) found [here](resources/haz/Intensity_bin_dict.csv)
 
 First 10 rows displayed only
 
@@ -389,7 +389,7 @@ Faruque Abdullah,<br> Maruf Billah | 2021-05-05 | https://github.com/OasisLMF/Ba
 | demo_location | Demo location | A sample exposure location file which can be run through the model. | text/csv | csv |  |  |  | resources/exp/demo_location.csv |  |  |
 
 #### Exposure Required Fields
-File (ExposureRequiredFields.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/exp/ExposureRequiredFields.csv)
+File (ExposureRequiredFields.csv) found [here](resources/exp/ExposureRequiredFields.csv)
 
 First 10 rows displayed only
 
@@ -404,7 +404,7 @@ First 10 rows displayed only
 5051;5052;5101;5151;5053;5054;5055;5102;5103;5104;5152 |
 
 #### Demo location
-File (demo_location.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/exp/demo_location.csv)
+File (demo_location.csv) found [here](resources/exp/demo_location.csv)
 
 First 10 rows displayed only
 
@@ -519,7 +519,7 @@ First 10 rows displayed only
 | OED_OCCUPANCY_CLASS | OED Occupancy codes | Describes attributes associated with OED occupancy code for vulnerability function mapping. | text/csv | csv |  |  |  | resources/vln/OED_OCCUPANCY_CLASS.csv |  |  |
 
 #### OED Construction codes
-File (OED_CONSTRUCTION_CLASS.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/vln/OED_CONSTRUCTION_CLASS.csv)
+File (OED_CONSTRUCTION_CLASS.csv) found [here](resources/vln/OED_CONSTRUCTION_CLASS.csv)
 
 First 10 rows displayed only
 
@@ -610,12 +610,12 @@ No file found at /home/anish/Documents/github/BangladeshCyclone/docs/resources/v
 | gul_S1_summary-info | Ground up Summary Info | Describes the summary level for the Ground Up loss reports. | text/csv | csv |  |  |  | resources/los/gul_S1_summary-info.csv |  |  |
 
 #### Analysis settings for modelled losses
-File (analysis_settings.json) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/los/analysis_settings.json)
+File (analysis_settings.json) found [here](resources/los/analysis_settings.json)
 
 Cannot display preview for json files
 
 #### Ground up AAL
-File (gul_S1_aalcalc.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/los/gul_S1_aalcalc.csv)
+File (gul_S1_aalcalc.csv) found [here](resources/los/gul_S1_aalcalc.csv)
 
 First 10 rows displayed only
 
@@ -625,7 +625,7 @@ First 10 rows displayed only
 | 1 | 2 | 49.664581 | 171.403816 |
 
 #### Ground up ELT
-File (gul_S1_eltcalc.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/los/gul_S1_eltcalc.csv)
+File (gul_S1_eltcalc.csv) found [here](resources/los/gul_S1_eltcalc.csv)
 
 First 10 rows displayed only
 
@@ -643,7 +643,7 @@ First 10 rows displayed only
 | 1 | 2 | 5 | 1181.176514 | 432.259186 | 40000.000000 |
 
 #### Ground up Aggregate LEC
-File (gul_S1_leccalc_full_uncertainty_aep.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/los/gul_S1_leccalc_full_uncertainty_aep.csv)
+File (gul_S1_leccalc_full_uncertainty_aep.csv) found [here](resources/los/gul_S1_leccalc_full_uncertainty_aep.csv)
 
 First 10 rows displayed only
 
@@ -661,7 +661,7 @@ First 10 rows displayed only
 | 1 | 2 | 2.000000 | 0.000000 |
 
 #### Ground up Occurrence LEC
-File (gul_S1_leccalc_full_uncertainty_oep.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/los/gul_S1_leccalc_full_uncertainty_oep.csv)
+File (gul_S1_leccalc_full_uncertainty_oep.csv) found [here](resources/los/gul_S1_leccalc_full_uncertainty_oep.csv)
 
 First 10 rows displayed only
 
@@ -679,7 +679,7 @@ First 10 rows displayed only
 | 1 | 2 | 2.000000 | 0.000000 |
 
 #### Ground up Summary Info
-File (gul_S1_summary-info.csv) found [here](/home/anish/Documents/github/BangladeshCyclone/docs/resources/los/gul_S1_summary-info.csv)
+File (gul_S1_summary-info.csv) found [here](resources/los/gul_S1_summary-info.csv)
 
 First 10 rows displayed only
 
