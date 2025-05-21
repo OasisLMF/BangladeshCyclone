@@ -398,10 +398,8 @@ First 10 rows displayed only
 | LocPerilsCovered | OED | location | The perils to which the location is at risk. | WTC' ,'WSS', 'WW1','AA1' |
 | Latitude | OED | location | The latitude of the location (decimal) | Floating point number |
 | Longitude | OED | location | The longitude of the location (decimal) | Floating point number |
-| OccupancyCode | OED | location | The OED code describing the occupancy type of the location | A subset of the standard OED OccupancyCodes:  1000;1050;1051;1052;1053;1054;1055;1056;1100;1101;1102;1103;1104;1105;1106;1107;1108;1109;1110;1111;1112;1113;1114;1115;1116;1117;1118;1119;1120;1121;1122;1123;1150;1151;1152;1153;1154;1155;1156;1157;1158;1159
- |
-| ConstructionCode | OED | location | The OED code describing the construction type of the location | A subset of the standard OED ConstructionCodes:
-5051;5052;5101;5151;5053;5054;5055;5102;5103;5104;5152 |
+| OccupancyCode | OED | location | The OED code describing the occupancy type of the location | A subset of the standard OED OccupancyCode.  See OED_OCCUPANCY_CLASS.csv |
+| ConstructionCode | OED | location | The OED code describing the construction type of the location | A subset of the standard OED ConstructionCodes. See OED_CONSTRUCTION_CLASS.csv |
 
 #### Demo location
 File (demo_location.csv) found [here](resources/exp/demo_location.csv)
@@ -537,7 +535,7 @@ First 10 rows displayed only
 | 5104 | MAS | WTC | LQU | Tropical Cyclone | Concerte buildings with roofs made of Tin (CI sheet) or Telly |  |  |  |
 
 #### OED Occupancy codes
-No file found at /home/anish/Documents/github/BangladeshCyclone/docs/resources/vln/OED_OCCUPANCY_CLASS.csv, could not display data
+No file found at /home/joh/dev/BangladeshCyclone/docs/resources/vln/OED_OCCUPANCY_CLASS.csv, could not display data
 
 ### Sources
 | Source identifier | Name | URL | type | Component |
